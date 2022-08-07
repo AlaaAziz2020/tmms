@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tmms</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap 5 css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap 5 js file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main css file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+         <!-- Start of the side nav -->
+         <nav
+         id="sideNav"
+         class="sidenav opened p-3 position-fixed top-0 d-flex align-items-center justify-content-between flex-column bg-white overflow-auto"
+       >
+         <!-- Logo -->
+         <div class="logo w-100 d-flex justify-content-center ">
+           <div
+             class="logo-content d-flex align-items-center justify-content-center"
+           >
+             <span class="text-uppercase text-white">tmms</span>
+           </div>
+         </div>
+         <!-- End of the logo -->
+     
+         <!-- Start of the side nav menu -->
+         <ul class=" mt-3 sidenav-menu list-unstyled">
+           <li>
+             <a
+               href="index.html"
+               class="active d-block ps-5 ms-5  mb-2 text-decoration-none text-white  text-capitalize"
+               >advertisment</a
+             >
+           </li>
+           <li>
+             <a
+               href="index9.html"
+               class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+               >new tenders</a
+             >
+           </li>
+           <li>
+             <a
+               href="index23.html"
+               class="d-block ps-5 ms-5  mb-2 text-decoration-none text-dark text-capitalize"
+               >tenders history</a
+             >
+           </li>
+           <li>
+             <a
+               href="index24.html"
+               class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+               >live competition</a
+             >
+           </li>
+           <li>
+             <a
+               href="index27.html"
+               class="d-block ps-5 ms-5 mb-2 text-decoration-none text-dark text-capitalize"
+               >Practice</a
+             >
+           </li>
+           <li>
+             <a
+               href="index30.html"
+               class="d-block ps-5 ms-5 mb-2 text-decoration-none text-dark text-capitalize"
+               >my products</a
+             >
+           </li>
+           <li>
+             <a
+               href="index43.html"
+               class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+               >my documents</a
+             >
+           </li>
+           <li>
+             <a
+               href="index34.html"
+               class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+               >services</a
+             >
+           </li>
+           <li>
+             <a
+               href="index41.html"
+               class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+               >news</a
+             >
+           </li>
+           <li>
+             <a
+               href="#"
+               class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+               >reports</a
+             >
+           </li>
+           <li>
+             <a
+               href="index46.html"
+               class=" d-block ps-5 ms-5 mb-5 pb-2 text-decoration-none text-dark text-capitalize"
+               >payments</a
+             >
+           </li>
+         </ul>
+         <!-- End of the side nav menu -->
+     
+         <!-- Logout btn -->
+         <button
+           class="logout-btn btn mt-5 pt-5 pe-4 d-flex align-items-center justify-content-center"
+         >
+           <img src="images/layout-img.png" class="mt-1 me-2" alt="log-out-img" />
+           <span>logout</span>
+         </button>
+         <!-- End of the logout btn -->
+       </nav>
+       <!-- End of the side nav -->
+      <!-- Start of the navbar -->
+      <nav class="navbar py-2 position-sticky top-0 bg-white opened">
+        <!-- Start of the container -->
+        <div class="container">
+          <!-- Bars icon btn -->
+          <button id="barsIcon" class="bars btn text-start">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!-- End of the bars icon btn -->
+   <!-- Search -->
+   <div class="search me-5 position-relative d-flex align-items-center">
+    <i class="search-icon position-absolute fa-solid fa-magnifying-glass"></i>
+    <input
+      id="searchInput"
+      type="text"
+      class="form-control border-2"
+      placeholder="Search..."
+    />
+    <button id="closeSearchMenu" class="btn p-0 close-search position-absolute d-none">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <!-- Start of the search menu -->
+    <div class="search-menu w-100 position-absolute bg-white d-none overflow-hidden"></div>
+    <!-- End of the search menu -->
+  </div>
+  <!-- End of the search -->
+  
+          <!-- Search --
+          <div class="search me-5 position-relative d-flex align-items-center">
+            <i class="position-absolute fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              class="form-control border-2"
+              placeholder="Search..."
+            />
+          </div>
+          <!-- End of the search -->
+  
+          <!-- Start of the left box -->
+          <div class="left d-flex align-items-center justify-content-end">
+            <!-- Notification-dropdown -->
+            <div class="dropdown notification-dropdown me-2">
+              
+              <button
+                class="btn p-0 dropdown-toggle"
+                type="button"
+                id="notificationDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              > 
+                <i class="fa-solid fa-bell"></i>
+                
+              </button>
+              <!-- Notification dropdown content -->
+      
+              <ul
+                class="dropdown-menu end-0 mt-3"
+                aria-labelledby="notificationDropdown">
+  
+              <li class="notification-first pt-2 " >
+                <a class="dropdown-item d-flex justify-content-between " href="#"  style="background: none">
+                  <span class="notification-text ">Notifications</span>
+                  <span class=" search1"><i class="fa fa-search"></i></span>
+                </a>
+              </li>
+              <li class="notification-New pt-3" >
+                <a class="dropdown-item d-inline" href="#">
+                <span class="notification-text2 ">New</span>
+                <span>
+                  <a href="#" class="notification-mark px-3" >Mark All as Read</a>
+                </span>
+              </a>
+            </li>
+            <li class="notification1">
+              <a href="index.html">
+                <div class="list-item">
+                  <div class="list-left">
+                    <span class="avatar mx-3">
+                      <img alt="" src="./images/hammer3.png">
+                      <span class="new-ad">New advertisement added and x company ask you to join</span>
+                      <p class="notification-time ps-5 ms-3">2h Ago . advertisements</p>
+                    </span>
+                  </div>
+              
+                </div>
+              </a>
+            </li>
+            <li class="notification1">
+              <a href="index.html">
+                <div class="list-item">
+                  <div class="list-left">
+                    <span class="avatar mx-3">
+                      <img alt="" src="./images/hammer3.png">
+                      <span class="new-ad">Tender awarded deadline in two days at 24/05/2022</span>
+                      <p class="notification-time ps-5 ms-3">2h Ago . Tenders</p>
+                    </span>
+                  </div>
+              
+                </div>
+              </a>
+            </li>
+          
+            <li class="notification1">
+              <a href="index.html">
+                <div class="list-item">
+                  <div class="list-left">
+                    <span class="avatar mx-3">
+                      <img alt="" src="./images/hammer3.png">
+                      <span class="new-ad">New announcing for tender X is finished you can</span>
+                      <p class="notification-time ps-5 ms-3">2h Ago . advertisements</p>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="notification1">
+              <a href="index.html">
+                <div class="list-item">
+                  <div class="list-left">
+                    <span class="avatar mx-3">
+                      <img alt="" src="./images/hammer3.png">
+                      <span class="new-ad">new advertisement added and x company ask you </span>
+                      <p class="notification-time ps-5 ms-3">2h Ago . Tenders</p>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="notification1">
+              <a href="index.html">
+                <div class="list-item">
+                  <div class="list-left">
+                    <span class="avatar mx-3">
+                      <img alt="" src="./images/hammer3.png">
+                      <span class="new-ad">New advertisement added and x company ask you </span>
+                      <p class="notification-time ps-5 ms-3">2h Ago . advertisements</p>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="notification1">
+              <a href="index.html">
+                <div class="list-item">
+                  <div class="list-left">
+                    <span class="avatar mx-3">
+                      <img alt="" src="./images/hammer3.png">
+                      <span class="new-ad">Tender awarded deadline in two days at 24/05/2022</span>
+                      <p class="notification-time ps-5 ms-3">2h Ago . Tenders</p>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+              </ul>
+              <!-- End of the notification dropdown content -->
+            </div>
+            <!-- End of the notification dropdown -->
+    <!-- Profile dropdown -->
+    <div class="dropdown profile-dropdown p-2">
+      <button class="w-100 btn px-3 dropdown-toggle d-flex align-items-center justify-content-between" type="button"
+      id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="d-flex align-items-center">
+        <img src="images/profile.png" class="profile-img me-2" alt="profile-img" />
+        <span>X hospital</span>
+      </span>
+  
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+  
+    <div class="dropdown-menu p-0 x-hospital1 end-0" aria-labelledby="dropdownMenuLink">
+      <div class="profile-info d-flex mb-1 p-2">
+        <img src="./images/profile.png" class="d-block me-3" alt="profile-img" />
+        <div class="profile-data w-100 mt-1">
+          <h5 class="text-dark mb-1 profile-name">X hospital</h5>
+          <h6 class="text-secondary profile-email mb-2">X hospital@gmail.com</h6>
+          <div class="edit-profile d-flex justify-content-end">
+            <button class="btn text-white">Edit Profile</button>
+          </div>
+        </div>
+      </div>
+      <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="index38.html">
+        <i class="fa-solid fa-heart me-2"></i>
+        <span class="text-capitalize ps-2">Favorite Tenders</span>
+      </a>
+      <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="index38.html">
+        <i class="fa fa-user me-2"></i>
+        <span class="text-capitalize ps-2">My Profile</span>
+      </a>
+      <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="#">
+        <i class="fa fa-download me-2"></i>
+        <span class="text-capitalize ps-2">Downloads</span>
+      </a>
+      <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="#">
+        <i class="fa fa-gear me-2"></i>
+        <span class="text-capitalize ps-2">Settings</span>
+      </a>
+      <a class="dropdown-item p-3 d-flex align-items-center" href="#">
+        <i class="fa fa-sign-out me-2"></i>
+        <span class="text-capitalize ps-2">Log Out</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  <!-- End of the profile dropdown --
+        
+          </div>
+          <!-- End of the left box -->
+        </div>
+        <!-- End of the container -->
+      </nav>
+      <!-- End of the navbar -->
+    <!--search----->
+    <div class="advertisment-search ms-5 mt-4 pt-3 ">
+      <div class="row">
+        <div class="page_title_box d-flex  ">
+        <div class="col-md-9">
+          <div class="page_title_left d-flex align-items-center">
+              <h3 class="f_s_25 f_w_700 dark_text pt-2  ">Advertisement</h3>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+           <div class="page_title_right pt-2 mx-4  ">
+               <div class="page_date_button d-flex align-items-center">
+                   <div id="btnContainer ">
+                       <button class="btn-list "  onclick="listView()"><i class="fa fa-bars text-white "></i> </button> 
+                       <button class="btn-view active" onclick="gridView()"><i class="fa fa-th-large"></i> </button>
+                     </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+<!------Search---->
+  
+<div class="advertisment__bottom">
+  <div class="Live-advertisments pb-5 pt-2 px-3">
+
+    <div class="advertisment__bottom__item">
+      <a href="index.html">
+        <i class="fa-solid fa-file"></i>
+        <span>All Advetisments</span>
+      </a >
+  
+    </div>
+    </div>
+    <div class="all-advertisments">
+    <div class="advertisment__bottom__item" style="    padding-top: 12%;
+    ">
+      <a href="index6.html">
+        <i class="fa-solid fa-file"></i>
+        <span class="all-ads"> Live Advertisments </span></a>
+        <hr class="hr1">
+
+    </div>
+  </div>
+  <div class="expired-advertisments pb-5 ">
+    <div class="advertisment__bottom__item">
+      <a href="#">
+        <i class="fa-solid fa-file"></i>
+        <span> Expired Advertisments </span></a
+      >
+    </div>
+    </div>
+  </div>
+</div>
+<!-- End of advertisments Section -->
+<!-- Start Cards Section -->
+
+
+<!-- named the classes to describe each class what it should do 
+feel free to modify the classes 
+to support your way it's fully modifiable
+and you can over rigth any one easly without
+important tag or making conflict with any librart you use -->
+<!-----------------------------------box2--------------------------------------------------------------------------------------->
+<div class="box-search1 ">
+  <div class="">
+    <div class="row " >
+    <div class="col-sm-12 col-lg-3">
+      <div class="core-form mt-4" style="    width:40vh;height: 81%;      ">
+        <div class="form-group has-search  pt-2  " style="width: 100%">
+          <select class="form-select  mt-4" aria-label="Core Information">
+            <option selected>Core Information</option>
+            <option value="1">Advertisment</option>
+            <option value="2">Tender</option>
+            <option value="3">Practice</option>
+          </select>
+          <select class="form-select mt-3" aria-label="Core Activity">
+            <option selected>Core Activity</option>
+            <option value="1">Medical Tenders</option>
+            <option value="2">Engineering Tenders</option>
+          </select>
+          <select class="form-select mt-3" aria-label="Advanced Search">
+            <option selected>Advanced Search</option>
+            <option value="1">Tenders In Cairo</option>
+             </select>
+          <select class="form-select mt-3" aria-label="Advertisement Name">
+            <option selected>Advertisement Name</option>
+            <option value="1">ADS Name</option>
+          </select>
+          <select class="form-select mt-3" aria-label="Advertisement Name">
+            <span class="fa fa-search form-control-feedback "></span>
+            <option selected>Ad reference number</option>
+            <option value="1">220439541745</option>
+          </select>
+  
+          <p class="choose mt-2 pt-2 ps-2" style="color: #4F8259;">Choose Ads Date</p>
+          <div class="row">
+            <div class="col-md-6 p-0 ">
+                <div class="form-group has-search " style="width: 93%">
+                    <select class="form-control-from" style="margin-left:21%">
+             <option selected="" hidden="">From</option>
+          </select>
+
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="form-group has-search">
+                    <select class="form-control " style="width: 114px;margin-left:0;">
+             <option selected="" hidden="">To</option>
+          </select>
+
+                </div>
+              </div>
+      </div>
+      <div class="checkbox-6 d-flex align-items-center ms-3 mt-3 gap-2">
+        <input id="chekinput"  type="checkbox" style="margin-left: 30px;" checked>
+        <div class="checkinput"></div>
+        <label   for="chekinput" style="color:#4F8259;cursor: pointer; font-size: 18px;  " for="">Hijri</label>
+      </div>
+      <div class="buttons mt-3">
+        <div class="row">
+            <div class="col-sm-6" >
+                <button type="button" class="cancel " style="height: 29px;width: 122px; color: #4F8259;   margin-left: 8%;
+                " aria-placeholder="cancel">cancel</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group has-search h-100 text-white " style="width: 269px">
+                    <span class="fa fa-search form-control-feedback text-white mt-2 px-5 ps-2"></span>
+                    <button type="button" class="search  px-1 text-white border-0" aria-placeholder="Search" style="    height: 29px;width: 106px;
+                    ">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+  <div class="col-sm-8 col-lg-9">
+    <div >
+      <div class="box1">
+          <!-- large card Left Section -->
+  <div class="cards-container__box-container mt-4" style="    height: 284px;
+  ">
+    <div class="large-card" style="    height: 176px;
+    ">
+      <!-- large card top section -->
+      <div class="large-card__top" style="height: 164px">
+        <!-- large card top left section -->
+        <div class="large-card__top__left" style="    width: 730px;
+        ">
+          <p class="large-card__top__left__date">
+            Publish Date  22/6/2022
+          </p>
+          <h2 class="large-card__top__left__title px-4">
+            <div class="large-card__top__left__title__icon">
+              <!--<i class="fa-solid fa-gavel"></i>-->
+              <img src="./images/hammer2-fococlipping-standard.png" class="hammer2">
+            </div>
+            Maintenence and upgrade of self-service devices and smart<br>
+            hospital chanels
+          </h2>
+          <div class="large-card__top__left__description">
+            <p>
+              Health Services Program at the Royal Commission..
+            </p>
+            <a href="index7.html" class="pb-3">More Details</a>
+          </div>
+        </div>
+        <!-- large card top right section -->
+        <div class="large-card__top__right2 " style="    margin-top: 28px;width: 320px;">
+          <div class="large-card__top__right2__title">
+            <h4 class="pt-2" style="    margin-right: 14%;
+            ">General Tender</h4>
+          </div>
+          <div class="large-card__top__right__calender mt-3" style="margin-left: 8%">
+            <span class="ps-2 text-center px-2 mr-5 pr-5 ">2</span>
+            <span class="ps-2 text-center px-2 mr-5">2</span>
+            <span class="ps-2 text-center px-2">2</span>
+            <span class="ps-2 text-center px-2" >0</span>
+            <span class="ps-2 text-center px-2">1</span>
+            <span class="ps-2 text-center px-2">2</span>
+          </div>
+          <div class="large-card__top__right__calender__description mt-2 ps-4 mb-1 pb-1" style="margin-left:2%">
+            <span class="ms-3" style="    margin-left: 3px">Month</span>
+            <span class="ms-4 ps-3">Day</span>
+            <span class="ms-4 ps-3">Hour</span>
+          </div>
+          <hr class="mt-2" style="color: #B8B5B5;width:280px;">
+        </div>
+      </div>
+      <!-- large card bottom section -->
+  
+      <!-- large card left bottom section -->
+      <div class="large-card__bottom">
+        <div class="large-card__bottom__left">
+          <div class="large-card__bottom__left__item " style="    width: 220px        ;
+          ">
+            <div class="large-card__bottom__left__item__ic">
+              <!--<i class="fa-solid fa-sign-hanging"></i>-->
+            </div>
+            <img src="./images/grreen-hammmer-fococlipping-standard (1).png" class="tender-image" ><br>
+             <span>
+              <span class="ad-status ">Ad Status :</span>
+              <span class="">A certified</span>
+          </span>
+          </div>
+          <div class="large-card__bottom__left__item pt-3" style="    width: 243px;
+          ">
+            <div class="large-card__bottom__left__item__icon">
+              <!--<i class="fa-solid fa-clock"></i>-->
+            </div>
+            <img src="./images/clock.png" class="mb-1 mt-1 tender-img"><br>
+             <span >
+              <span class="ad-status">Period :</span>
+              <span class="">2</span>
+              </span>
+          </div>
+  
+          <div class="large-card__bottom__left__item pt-3" style="    width: 267px;
+          border-right:1px solid #dedede">
+            <div class="large-card__bottom__left__item__icon">
+  
+              <!--<i class="fa-solid fa-calendar-days"></i>-->
+            </div>
+            <img src="./images/cal.png" class="mb-1 mt-2 ms-5 ps-2 tender-img1"><br>
+             <span>
+                <span class="ad-status">Deadline :</span>
+                <span class="">30/10/2024</span>
+              </span>
+            </div>
+          </div>
+        <!-- large card rigth bottom section -->
+  
+        <div class="large-card__bottom__right2" style="  width: 320px;">
+          <div class="large-card__bottom__left2__item ">
+            <div class="large-card__bottom__left2__item__icon">
+              <!--<i class="fa-solid fa-money-bill-1"></i>-->
+            </div>
+            <img src="./images/money.png"  class="tender-document-value pt-3 ms-5 mx-4"><br>
+  
+            <span class="pt-3 px-2">
+              <span class="ad-status ">Tender documents Value :</span><br>
+              <span class="">500 R</span>
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- large card Left Section -->
+      </div> 
+    </div>
+    <div >
+      <div class="box12" style="margin-left: 0;  margin-top: 40px"
+      >
+          <!-- large card Left Section -->
+  <div class="cards-container__box-container mt-4" style="    height: 284px;
+  ">
+    <div class="large-card" style="    height: 176px;
+    ">
+      <!-- large card top section -->
+      <div class="large-card__top" style="height: 164px">
+        <!-- large card top left section -->
+        <div class="large-card__top__left" style="    width: 730px;
+        ">
+          <p class="large-card__top__left__date">
+            Publish Date  22/6/2022
+          </p>
+          <h2 class="large-card__top__left__title px-4">
+            <div class="large-card__top__left__title__icon">
+              <!--<i class="fa-solid fa-gavel"></i>-->
+              <img src="./images/hammer2-fococlipping-standard.png" class="hammer2">
+            </div>
+            Maintenence and upgrade of self-service devices and smart<br>
+            hospital chanels
+          </h2>
+          <div class="large-card__top__left__description">
+            <p>
+              Health Services Program at the Royal Commission..
+            </p>
+            <a href="index7.html" class="pb-3">More Details</a>
+          </div>
+        </div>
+        <!-- large card top right section -->
+        <div class="large-card__top__right2 " style="    margin-top: 28px;width: 320px;">
+          <div class="large-card__top__right2__title">
+            <h4 class="pt-2" style="    margin-right: 14%;
+            ">General Tender</h4>
+          </div>
+          <div class="large-card__top__right__calender mt-3" style="margin-left: 8%">
+            <span class="ps-2 text-center px-2 mr-5 pr-5 ">2</span>
+            <span class="ps-2 text-center px-2 mr-5">2</span>
+            <span class="ps-2 text-center px-2">2</span>
+            <span class="ps-2 text-center px-2" >0</span>
+            <span class="ps-2 text-center px-2">1</span>
+            <span class="ps-2 text-center px-2">2</span>
+          </div>
+          <div class="large-card__top__right__calender__description mt-2 ps-4 mb-1 pb-1" style="margin-left:2%">
+            <span class="ms-3" style="    margin-left: 3px">Month</span>
+            <span class="ms-4 ps-3">Day</span>
+            <span class="ms-4 ps-3">Hour</span>
+          </div>
+          <hr class="mt-2" style="color: #B8B5B5;width:280px;">
+        </div>
+      </div>
+      <!-- large card bottom section -->
+  
+      <!-- large card left bottom section -->
+      <div class="large-card__bottom">
+        <div class="large-card__bottom__left">
+          <div class="large-card__bottom__left__item " style="    width: 220px        ;
+          ">
+            <div class="large-card__bottom__left__item__ic">
+              <!--<i class="fa-solid fa-sign-hanging"></i>-->
+            </div>
+            <img src="./images/grreen-hammmer-fococlipping-standard (1).png" class="tender-image" ><br>
+             <span>
+              <span class="ad-status ">Ad Status :</span>
+              <span class="">A certified</span>
+          </span>
+          </div>
+          <div class="large-card__bottom__left__item pt-3" style="    width: 243px;
+          ">
+            <div class="large-card__bottom__left__item__icon">
+              <!--<i class="fa-solid fa-clock"></i>-->
+            </div>
+            <img src="./images/clock.png" class="mb-1 mt-1 tender-img"><br>
+             <span >
+              <span class="ad-status">Period :</span>
+              <span class="">2</span>
+              </span>
+          </div>
+  
+          <div class="large-card__bottom__left__item pt-3" style="    width: 267px;
+          border-right:1px solid #dedede">
+            <div class="large-card__bottom__left__item__icon">
+  
+              <!--<i class="fa-solid fa-calendar-days"></i>-->
+            </div>
+            <img src="./images/cal.png" class="mb-1 mt-2 ms-5 ps-2 tender-img1"><br>
+             <span>
+                <span class="ad-status">Deadline :</span>
+                <span class="">30/10/2024</span>
+              </span>
+            </div>
+          </div>
+        <!-- large card rigth bottom section -->
+  
+        <div class="large-card__bottom__right2" style="  width: 320px;">
+          <div class="large-card__bottom__left2__item ">
+            <div class="large-card__bottom__left2__item__icon">
+              <!--<i class="fa-solid fa-money-bill-1"></i>-->
+            </div>
+            <img src="./images/money.png"  class="tender-document-value pt-3 ms-5 mx-4"><br>
+  
+            <span class="pt-3 px-2">
+              <span class="ad-status ">Tender documents Value :</span><br>
+              <span class="">500 R</span>
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- large card Left Section -->
+      </div> 
+  <div class="box12" style=" margin-left: 0; margin-top: 40px;
+  ">
+  
+        <!-- large card Left Section -->
+  <div class="cards-container__box-container mt-4" style="    height: 284px;
+  ">
+  <div class="large-card" style="    height: 176px;
+  ">
+    <!-- large card top section -->
+    <div class="large-card__top" style="height: 164px">
+      <!-- large card top left section -->
+      <div class="large-card__top__left" style="    width: 730px;
+      ">
+        <p class="large-card__top__left__date">
+          Publish Date  22/6/2022
+        </p>
+        <h2 class="large-card__top__left__title px-4">
+          <div class="large-card__top__left__title__icon">
+            <!--<i class="fa-solid fa-gavel"></i>-->
+            <img src="./images/hammer2-fococlipping-standard.png" class="hammer2">
+          </div>
+          Maintenence and upgrade of self-service devices and smart<br>
+          hospital chanels
+        </h2>
+        <div class="large-card__top__left__description">
+          <p>
+            Health Services Program at the Royal Commission..
+          </p>
+          <a href="index7.html" class="pb-3">More Details</a>
+        </div>
+      </div>
+      <!-- large card top right section -->
+      <div class="large-card__top__right2 " style="    margin-top: 28px;width: 320px;">
+        <div class="large-card__top__right2__title">
+          <h4 class="pt-2" style="    margin-right: 14%;
+          ">General Tender</h4>
+        </div>
+        <div class="large-card__top__right__calender mt-3" style="margin-left: 8%">
+          <span class="ps-2 text-center px-2 mr-5 pr-5 ">2</span>
+          <span class="ps-2 text-center px-2 mr-5">2</span>
+          <span class="ps-2 text-center px-2">2</span>
+          <span class="ps-2 text-center px-2" >0</span>
+          <span class="ps-2 text-center px-2">1</span>
+          <span class="ps-2 text-center px-2">2</span>
+        </div>
+        <div class="large-card__top__right__calender__description mt-2 ps-4 mb-1 pb-1" style="margin-left:2%">
+          <span class="ms-3" style="    margin-left: 3px">Month</span>
+          <span class="ms-4 ps-3">Day</span>
+          <span class="ms-4 ps-3">Hour</span>
+        </div>
+        <hr class="mt-2" style="color: #B8B5B5;width:280px;">
+      </div>
+    </div>
+    <!-- large card bottom section -->
+  
+    <!-- large card left bottom section -->
+    <!-- bottom  -->
+    <div class="large-card__bottom">
+      <div class="large-card__bottom__left">
+        <div class="large-card__bottom__left__item " style="    width: 220px        ;
+        ">
+          <div class="large-card__bottom__left__item__ic">
+            <!--<i class="fa-solid fa-sign-hanging"></i>-->
+          </div>
+          <img src="./images/grreen-hammmer-fococlipping-standard (1).png" class="tender-image" ><br>
+           <span>
+            <span class="ad-status ">Ad Status :</span>
+            <span class="">A certified</span>
+        </span>
+        </div>
+        <div class="large-card__bottom__left__item pt-3" style="    width: 243px;
+        ">
+          <div class="large-card__bottom__left__item__icon">
+            <!--<i class="fa-solid fa-clock"></i>-->
+          </div>
+          <img src="./images/clock.png" class="mb-1 mt-1 tender-img"><br>
+           <span >
+            <span class="ad-status">Period :</span>
+            <span class="">2</span>
+            </span>
+        </div>
+  
+        <div class="large-card__bottom__left__item pt-3" style="    width: 267px;
+        border-right:1px solid #dedede">
+          <div class="large-card__bottom__left__item__icon">
+  
+            <!--<i class="fa-solid fa-calendar-days"></i>-->
+          </div>
+          <img src="./images/cal.png" class="mb-1 mt-2 ms-5 ps-2 tender-img1"><br>
+           <span>
+              <span class="ad-status">Deadline :</span>
+              <span class="">30/10/2024</span>
+            </span>
+          </div>
+        </div>
+      <!-- large card rigth bottom section -->
+  
+      <div class="large-card__bottom__right2" style="  width: 320px;">
+        <div class="large-card__bottom__left2__item ">
+          <div class="large-card__bottom__left2__item__icon">
+            <!--<i class="fa-solid fa-money-bill-1"></i>-->
+          </div>
+          <img src="./images/money.png"  class="tender-document-value pt-3 ms-5 mx-4"><br>
+  
+          <span class="pt-3 px-2">
+            <span class="ad-status ">Tender documents Value :</span><br>
+            <span class="">500 R</span>
+          </span>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- large card Left Section -->
+    </div> 
+  </div>
+  </div>
+ </div>
+</div>
+</div>
+<!------------------------box2------------------------------------------------------------->
+<!---------------------------Pagination------------------------------------------------------------>
+<div class="paginate mx-5 px-2 mt-4">
+  <div class="row ml-4  mt-3">
+    <div class=" col-md-9 paginate">
+       <div class="dataTables_info" id="example_info" role="status" aria-live="polite">1 - 10 of 50 records</div>
+    </div>
+    <div class=" col-md-3">
+       <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+          <ul class="pagination">
+             <li class="paginate_button page-item previous disabled" id="example_previous">
+               <a href="#" aria-controls="example" style="color: black" data-dt-idx="0" tabindex="0" class="paginate-text text-decoration-none me-3">The page you’er on</a>
+          </li>
+          <!-- <div class="dropdown number ml-4 " style="background-color: white;">
+             <button class="dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">1</button>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="#">2</a>
+               <a class="dropdown-item" href="#">3</a>
+               <a class="dropdown-item" href="#">4</a>
+               <a class="dropdown-item" href="#">5</a>
+               <a class="dropdown-item" href="#">6</a>
+               <a class="dropdown-item" href="#">7</a>
+               <a class="dropdown-item" href="#">8</a>
+               <a class="dropdown-item" href="#">9</a>
+               <a class="dropdown-item" href="#">10</a>
+             </div>
+           </div> -->
+           <select name="" id="" style="background-color: white; width: 50px; padding: 3px;">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+           </select>
+       </ul>
+    </div>
+ </div>
+ </div>
+ </div>
+ 
+ <!---------------------------Pagination------------------------------------------------------------>
+
+<!-- wishing you the best & life full of joy <3  -->
+    <!-- Main js file -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

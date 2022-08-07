@@ -5,6 +5,7 @@ let searchMenu = document.querySelector(".search-menu");
 let searchInput = document.getElementById("searchInput");
 let closeSearchMenu = document.getElementById("closeSearchMenu");
 
+
 // Execute the function on clicking on the bars-icon btn
 barsIcon.onclick = function () {
   // Check if the sideNav is opened
@@ -96,3 +97,43 @@ closeSearchMenu.onclick = function () {
   if (allSearchItems) allSearchItems.forEach((el) => el.remove());
 };
 
+//Core//
+function createInfoMenuElements(items) {
+  // Loop on items parameter
+  for (let i in items) {
+    // Create link element
+    let link = document.createElement("a");
+    // Pass href attribute to the created link element
+    link.href = "#";
+    // Add classes to the created link element
+    if (i != items.length - 1)
+      link.className =
+        "info-item text-decoration-none d-block w-100 text-dark border-bottom border-2";
+    else
+      link.className =
+        "info-item text-decoration-none d-block w-100 text-dark";
+    // Create the text for the created link element
+    let linkText = document.createTextNode(items[i]);
+    // Append text to the link
+    link.appendChild(linkText);
+    // Append the created link element to the searchMenu
+   infoMenu.appendChild(link);
+  }
+}
+
+// Search function//
+// for preventing animations on load
+window.addEventListener("DOMContentLoaded",() => {
+	const atr = new ATRToggle(".toggle");
+});
+
+class ATRToggle {
+	constructor(qs) {
+		this.el = document.querySelector(qs);
+		this.input = this.el?.querySelector("input");
+		this.input?.addEventListener("change",this.removePristine.bind(this));
+	}
+	removePristine() {
+		this.el?.classList.remove("toggle--pristine");
+	}
+}
